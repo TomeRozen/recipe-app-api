@@ -5,10 +5,12 @@ from django.test import SimpleTestCase
 
 from app import calc
 
+
 class CalcTests(SimpleTestCase):
     """
     sample test class
     """
+
     def test_add_numbers(self):
         """
         test adding numbers
