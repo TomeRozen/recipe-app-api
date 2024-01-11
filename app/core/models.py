@@ -45,11 +45,14 @@ class UserManager(BaseUserManager):
 
         return user
 
+
 """
 It's a good idea to use custom user models for Django projects, as it is harder
 to change later on. In addition, Django's built-in user model uses a username
 field, which is not best practice for email-based authentication.
 """
+
+
 class User(AbstractBaseUser, PermissionsMixin):
     """
     Custom user model that supports using email instead of username.
